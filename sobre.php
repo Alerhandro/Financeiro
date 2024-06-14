@@ -9,7 +9,7 @@ include("protect.php")
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
-    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="chat.css">
 </head>
 
 <body>
@@ -21,9 +21,11 @@ include("protect.php")
     </header>
     <div class="container">
         <div class="sidebar">
-            <button><a href="painel.php">INICIO</a></button>
-            <button>Relatório</button>
-            <button>Desempenho</button>
+            <button><a href="painel.php">RECEITAS</a></button>
+            <button><a href="despesa.php">DESPESAS</a></button>
+            <button><a href="Relatoriocopy.php">RELATORIO ENTRADA</a></button>
+            <button><a href="Relatoriodespesa.php">RELATORIO SAIDA</a></button>
+            <button><a href="Desempenho.php">ENTRADA/SAIDA</a></button>
             <button><a href="sobre.php">SOBRE</a></button>
         </div>
         <div class="content">

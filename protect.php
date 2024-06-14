@@ -4,5 +4,5 @@ if (!isset($_SESSION)) {
 }
 
 if (!isset($_SESSION["id"])) {
-    die("Você não está logado. Para acessar esta pagina acesse o seu login. <p><a href = \"login.html\">Entrar</a></p>");
+    die("<center> Você não está logado. Para acessar esta pagina acesse o seu login. <p><a href = \"login.html\">Entrar</a></p> </center>");
 }

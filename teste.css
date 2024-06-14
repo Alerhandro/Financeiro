@@ -1,3 +1,6 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,19 +9,20 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #6CD2EF;
 }
 
 header {
     width: 100%;
-    background-color: #34495e;
+    background-color: #062C37;
     color: white;
     padding: 10px 0;
     text-align: right;
 }
 
 header .user-info {
-    font-size: 18px;
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -29,10 +33,11 @@ header .user-info {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
-
+*/
 .sidebar {
+    font-family: 'Inter', sans-serif;
     width: 20%;
-    background-color: #2c3e50;
+    background-color: #062C37;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +49,7 @@ header .user-info {
     padding: 10px;
     margin: 10px 0;
     border: none;
-    background-color: #3498db;
+    background-color: #1285A5;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -66,6 +71,67 @@ header .user-info {
 }
 
 .content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#chartdiv {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo {
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: all linear 190ms;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.campo::placeholder {
+    color: #666;
+}
+
+.campo:focus {
+    border-color: #ff05b4;
+}
+
+.btn {
+    font-family: sans-serif;
+    padding: 15px;
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.tamanho{
+    margin-top: right;
+    padding: 40px;
+    background-color: #ecf0f1;
+}
+
+.tamanho h1 {
+    margin-top: 0;
+}
+
+.tamanho p {
     font-size: 18px;
     line-height: 1.6;
 }

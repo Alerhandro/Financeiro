@@ -22,7 +22,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
             $usuario = $resultado->fetch_assoc();
 
             if (!isset($_SESSION)) {
-                session_start();
+                session_start();                                        
             }
 
             $_SESSION["id"] = $usuario["id_usuario"];
@@ -30,7 +30,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
             header("Location:painel.php");
         } else {
-            echo "login ou Senha incorretos!";
+            echo "<center>login ou Senha incorretos!</center>";
         }
     }
-}
+}                                                                           

@@ -8,7 +8,7 @@ include("conexao.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receita</title>
+    <title>Despesa</title>
     <link rel="stylesheet" href="teste.css">
     <link rel="stylesheet" href="chat.css">
 </head>
@@ -16,7 +16,7 @@ include("conexao.php");
 <body>
     <header>
         <div class="user-info">
-            <h4>Bem vindo as suas Receitas, <?php echo $_SESSION['nome']; ?></h4>
+            <h4>Bem vindo as suas Despesas, <?php echo $_SESSION['nome']; ?></h4>
             <p><a href="logout.php">Sair</a></p>
         </div>
     </header>
@@ -31,15 +31,15 @@ include("conexao.php");
         </div>
         <div class="content">
             <h1>Planeje bem</h1>
-            <form method="POST" action="insereValores.php">
-                <label for="">Insere a Descrição da sua receita</label>
+            <form method="POST" action="insereDespesa.php">
+                <label for="">Insere a Descrição da sua despesa</label>
                 <input class="campo" type="text" name="desc" placeholder="Digite aqui sua descrição" />
                 <label for="">Insere o Forma de pagamento</label>
                 <input class="campo" type="text" name="pag" placeholder="Digite aqui a Forma de pagamento" />
                 <label for="">Insere a data feita o pagamento</label>
                 <input class="campo" type="date" name="date" placeholder="Digite aqui a data" />
-                <label for="">Insere o valor de sua receita</label>
-                <input class="campo" type="number" name="receitas" placeholder="Digite aqui sua receita" />
+                <label for="">Insere o valor de sua despesa</label>
+                <input class="campo" type="number" name="despesas" placeholder="Digite aqui sua despesa" />
                 <label for="">Insere se foi pago ou a pagar</label>
                 <input class="campo" type="text" name="stats" placeholder="Digite aqui status" />
                 <button class="btn" type="submit">Adicionar</button>

@@ -22,6 +22,7 @@ body {
     width: 100%;
     height: 100vh;
     background: rgb(255, 255, 255);
+    
 }
 
 .container{
@@ -48,7 +49,7 @@ body {
     margin: 0px;
     shape-outside: circle(50% at 30%);
     clip-path: circle(50% at 0%);
-    background: lightblue;
+    background-color: #6CD2EF;
     z-index: 1;
 }
 
@@ -59,7 +60,7 @@ body {
     margin: -150px;
     shape-outside: circle(50% at 30%);
     clip-path: circle(50% at 50%);
-    background: lightblue;
+    background-color: #6CD2EF;
     z-index: 1;
 }
 
@@ -109,7 +110,7 @@ form {
 }
 
 .campo:focus {
-    border-color: #ff05b4;
+    border-color: #ff0505;
 }
 
 .btn {

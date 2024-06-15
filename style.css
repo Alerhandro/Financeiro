@@ -15,14 +15,12 @@ body {
 
 .page {
     display: flex;
-    flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: space-around;
     width: 100%;
     height: 100vh;
     background: rgb(255, 255, 255);
-    
 }
 
 .container{
@@ -49,7 +47,7 @@ body {
     margin: 0px;
     shape-outside: circle(50% at 30%);
     clip-path: circle(50% at 0%);
-    background-color: #6CD2EF;
+    background: lightblue;
     z-index: 1;
 }
 
@@ -60,7 +58,7 @@ body {
     margin: -150px;
     shape-outside: circle(50% at 30%);
     clip-path: circle(50% at 50%);
-    background-color: #6CD2EF;
+    background: lightblue;
     z-index: 1;
 }
 
@@ -110,7 +108,7 @@ form {
 }
 
 .campo:focus {
-    border-color: #ff0505;
+    border-color: #ff05b4;
 }
 
 .btn {

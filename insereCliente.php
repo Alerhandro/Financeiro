@@ -4,7 +4,7 @@ require("conexao.php");
 $usuario = $_POST['nome'];
 $senha = $_POST['senha'];
 
-$insereCliente = "INSERT INTO usuario(nome_usuario, senha_usuario) VALUES ('$usuario','$senha')";
+$insereCliente = "INSERT INTO usuario (nome_usuario, senha_usuario) VALUES ('$usuario','$senha')";
 $operacaoSQL = mysqli_query($conexao, $insereCliente);
 
 if (mysqli_affected_rows($conexao) != 0) {

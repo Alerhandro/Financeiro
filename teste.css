@@ -107,7 +107,7 @@ form {
 }
 
 .campo:focus {
-    border-color: #ff05b4;
+    border-color: #0985cc;
 }
 
 .btn {
@@ -121,7 +121,7 @@ form {
     cursor: pointer;
 }
 
-.tamanho{
+.tamanho {
     margin-top: right;
     padding: 40px;
     background-color: #ecf0f1;

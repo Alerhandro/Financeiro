@@ -34,14 +34,24 @@ include("conexao.php");
             <form method="POST" action="insereDespesa.php">
                 <label for="">Insere a Descrição da sua despesa</label>
                 <input class="campo" type="text" name="desc" placeholder="Digite aqui sua descrição" />
-                <label for="">Insere o Forma de pagamento</label>
-                <input class="campo" type="text" name="pag" placeholder="Digite aqui a Forma de pagamento" />
+                <label for="forma_pagamento">Forma de pagamento</label> <br>
+                <select id="forma_pagamento" name="pag">
+                    <option value="">Selecione a forma de pagamento</option>
+                    <option value="CARTAO DE CREDITO">Cartão de Crédito</option>
+                    <option value="BOLETO">Boleto Bancário</option>
+                    <option value="PIX">Pix</option>
+                    <option value="TRANSFERENCIA">Transferência Bancária</option>
+                </select> <br>
                 <label for="">Insere a data feita o pagamento</label>
                 <input class="campo" type="date" name="date" placeholder="Digite aqui a data" />
                 <label for="">Insere o valor de sua despesa</label>
                 <input class="campo" type="number" name="despesas" placeholder="Digite aqui sua despesa" />
-                <label for="">Insere se foi pago ou a pagar</label>
-                <input class="campo" type="text" name="stats" placeholder="Digite aqui status" />
+                <label for="status_pagamento">Status</label> <br>
+                <select id="status_pagamento" name="stats">
+                    <option value="">Selecione o status</option>
+                    <option value="PAGO">Pago</option>
+                    <option value="A_PAGAR">A pagar</option>
+                </select>
                 <button class="btn" type="submit">Adicionar</button>
             </form>
         </div>

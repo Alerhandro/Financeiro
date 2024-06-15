@@ -38,7 +38,7 @@ if ($conexao->connect_error) {
             <button><a href="despesa.php">DESPESAS</a></button>
             <button><a href="Relatoriocopy.php">RELATORIO ENTRADA</a></button>
             <button><a href="Relatoriodespesa.php">RELATORIO SAIDA</a></button>
-            <button><a href="Desempenho.php">ENTRADA/SAIDA</a></button>
+            <button><a href="calculos.php">ENTRADA/SAIDA</a></button>
             <button><a href="sobre.php">SOBRE</a></button>
         </div>
         <div class="content">

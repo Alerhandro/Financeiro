@@ -26,22 +26,32 @@ include("conexao.php");
             <button><a href="despesa.php">DESPESAS</a></button>
             <button><a href="Relatoriocopy.php">RELATORIO ENTRADA</a></button>
             <button><a href="Relatoriodespesa.php">RELATORIO SAIDA</a></button>
-            <button><a href="Desempenho.php">ENTRADA/SAIDA</a></button>
+            <button><a href="calculos.php">ENTRADA/SAIDA</a></button>
             <button><a href="sobre.php">SOBRE</a></button>
         </div>
         <div class="content">
             <h1>Planeje bem</h1>
-            <form method="POST" action="insereValores.php">
+            <form method="POST" action="insereValores.php">           
                 <label for="">Insere a Descrição da sua receita</label>
                 <input class="campo" type="text" name="desc" placeholder="Digite aqui sua descrição" />
-                <label for="">Insere o Forma de pagamento</label>
-                <input class="campo" type="text" name="pag" placeholder="Digite aqui a Forma de pagamento" />
+                <label for="forma_pagamento">Forma de pagamento</label> <br>
+                <select id="forma_pagamento" name="pag">
+                    <option value="">Selecione a forma de pagamento</option>
+                    <option value="CARTAO DE CREDITO">Cartão de Crédito</option>
+                    <option value="BOLETO">Boleto Bancário</option>
+                    <option value="PIX">Pix</option>
+                    <option value="TRANSFERENCIA">Transferência Bancária</option>
+                </select> <br>
                 <label for="">Insere a data feita o pagamento</label>
                 <input class="campo" type="date" name="date" placeholder="Digite aqui a data" />
                 <label for="">Insere o valor de sua receita</label>
                 <input class="campo" type="number" name="receitas" placeholder="Digite aqui sua receita" />
-                <label for="">Insere se foi pago ou a pagar</label>
-                <input class="campo" type="text" name="stats" placeholder="Digite aqui status" />
+                <label for="status_pagamento">Status</label> <br>
+                <select id="status_pagamento" name="stats">
+                    <option value="">Selecione o status</option>
+                    <option value="PAGO">Pago</option>
+                    <option value="A_PAGAR">A pagar</option>
+                </select>
                 <button class="btn" type="submit">Adicionar</button>
             </form>
         </div>

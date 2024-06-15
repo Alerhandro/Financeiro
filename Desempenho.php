@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("protect.php");
 include("conexao.php")
 ?>
@@ -11,7 +12,6 @@ include("conexao.php")
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desempenho</title>
     <link rel="stylesheet" href="chat.css">
-
 </head>
 
 <body>
@@ -27,7 +27,7 @@ include("conexao.php")
             <button><a href="despesa.php">DESPESAS</a></button>
             <button><a href="Relatoriocopy.php">RELATORIO ENTRADA</a></button>
             <button><a href="Relatoriodespesa.php">RELATORIO SAIDA</a></button>
-            <button><a href="Desempenho.php">ENTRADA/SAIDA</a></button>
+            <button><a href="calculos.php">ENTRADA/SAIDA</a></button>
             <button><a href="sobre.php">SOBRE</a></button>
         </div>
         <div class="content">
@@ -36,9 +36,9 @@ include("conexao.php")
             <table>
                 <thead>
                     <tr>
-                     <!--   <th>ID</th> -->
+                        <!--   <th>ID</th> -->
                         <th>DESCRIÇÃO</th>
-                        <th>FORMA DE PAG</th>
+                        <th>FORMA DE PAGAMENTO</th>
                         <th>DATA DA COMPRA </th>
                         <th>VALOR DO PAGAMENTO</th><br>
                         <th>STATUS</th>
@@ -53,11 +53,11 @@ include("conexao.php")
                         foreach ($executaConsulta as $receita) {
                     ?>
                             <tr>
-                             <!--   <td><?= $receita['id_receita']; ?></td> -->
+                                <!--   <td><?= $receita['id_receita']; ?></td> -->
                                 <td><?= $receita['desc_receita']; ?></td>
                                 <td><?= $receita['pagamento_receita']; ?></td>
                                 <td><?= $receita['data_receita']; ?></td>
-                                <td><?= $receita['valor_receita']; ?></td>
+                                <td>R$ <?= $receita['valor_receita']; ?></td>
                                 <td><?= $receita['status_receita']; ?></td>
                             </tr>
                     <?php
@@ -74,7 +74,7 @@ include("conexao.php")
                     <tr>
                         <!--  <th>ID</th> -->
                         <th>DESCRIÇÃO</th>
-                        <th>FORMA DE PAG</th>
+                        <th>FORMA DE PAGAMENTO</th>
                         <th>DATA DA COMPRA </th>
                         <th>VALOR DO PAGAMENTO</th><br>
                         <th>STATUS</th>
@@ -89,11 +89,11 @@ include("conexao.php")
                         foreach ($executaConsulta as $despesa) {
                     ?>
                             <tr>
-                               <!-- <td><?= $despesa['id_despesa']; ?></td> -->
+                                <!-- <td><?= $despesa['id_despesa']; ?></td> -->
                                 <td><?= $despesa['desc_despesa']; ?></td>
                                 <td><?= $despesa['pagamento_despesa']; ?></td>
                                 <td><?= $despesa['data_despesa']; ?></td>
-                                <td><?= $despesa['valor_despesa']; ?></td>
+                                <td class="despesas">R$ <?= $despesa['valor_despesa']; ?></td>
                                 <td><?= $despesa['status_despesa']; ?></td>
                             </tr>
                     <?php
@@ -103,6 +103,54 @@ include("conexao.php")
                     }
                     ?>
                 </tbody>
+            </table>
+            <table>
+
+                <?php
+               
+
+                // Verifica se os dados estão na sessão
+                if (!isset($_SESSION['totalReceitas']) || !isset($_SESSION['totalDespesas']) || !isset($_SESSION['resultado'])) {
+                    die("Os dados não foram recebidos corretamente.");
+                }
+
+                $totalReceitas = $_SESSION['totalReceitas'];
+                $totalDespesas = $_SESSION['totalDespesas'];
+                $resultado = $_SESSION['resultado'];
+                ?>
+
+                <!DOCTYPE html>
+                <html lang="pt-BR">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Resultados</title>
+                    <link rel="stylesheet" href="chat.css">
+                </head>
+
+                <body>
+                    <h1>Resultados</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Receita</th>
+                                <th>Despesa</th>
+                                <th>Valor Final</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>R$ <?= $totalReceitas; ?></td>
+                                <td class="despesas">R$ - <?= $totalDespesas; ?></td>
+                                <td>R$ <?= $resultado; ?></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </body>
+
+                </html>
+
+
             </table>
         </div>
     </div>

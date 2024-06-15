@@ -45,7 +45,7 @@ include("conexao.php");
                 <label for="">Insere a data feita o pagamento</label>
                 <input class="campo" type="date" name="date" placeholder="Digite aqui a data" />
                 <label for="">Insere o valor de sua despesa</label>
-                <input class="campo" type="number" name="despesas" placeholder="Digite aqui sua despesa" />
+                <input class="campo" type="number" name="despesas" placeholder="Digite aqui sua despesa" step="0.01" min="0"/>
                 <label for="status_pagamento">Status</label> <br>
                 <select id="status_pagamento" name="stats">
                     <option value="">Selecione o status</option>

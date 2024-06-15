@@ -57,7 +57,7 @@ include("conexao.php")
                                 <td><?= $receita['desc_receita']; ?></td>
                                 <td><?= $receita['pagamento_receita']; ?></td>
                                 <td><?= $receita['data_receita']; ?></td>
-                                <td>R$ <?= $receita['valor_receita']; ?></td>
+                                <td class="receita">R$ <?= $receita['valor_receita']; ?></td>
                                 <td><?= $receita['status_receita']; ?></td>
                             </tr>
                     <?php
@@ -107,7 +107,7 @@ include("conexao.php")
             <table>
 
                 <?php
-               
+
 
                 // Verifica se os dados estão na sessão
                 if (!isset($_SESSION['totalReceitas']) || !isset($_SESSION['totalDespesas']) || !isset($_SESSION['resultado'])) {
@@ -125,7 +125,7 @@ include("conexao.php")
                 <head>
                     <meta charset="UTF-8">
                     <title>Resultados</title>
-                    <link rel="stylesheet" href="chat.css">
+                    <link rel="stylesheet" href="cor.css">
                 </head>
 
                 <body>
@@ -140,9 +140,9 @@ include("conexao.php")
                         </thead>
                         <tbody>
                             <tr>
-                                <td>R$ <?= $totalReceitas; ?></td>
+                                <td class="receita">R$ <?= $totalReceitas; ?></td>
                                 <td class="despesas">R$ - <?= $totalDespesas; ?></td>
-                                <td>R$ <?= $resultado; ?></td>
+                                <td class="total" >R$ <?= $resultado; ?></td>
                             </tr>
                         </tbody>
                     </table>

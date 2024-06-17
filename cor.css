@@ -13,14 +13,30 @@
 /* Estilo básico para todos os links */
 a {
     text-decoration: none; /* Remove a sublinhado do link */
-    color: rgb(209, 1, 115); /* Cor do texto do link */
+    color: rgb(255 255 255); /* Cor do texto do link */
     font-weight: bold; /* Texto em negrito */
 }
 
 /* Estilo para links quando o usuário passa o mouse sobre eles */
 a:hover {
-    color: rgb(255, 102, 0); /* Cor do texto do link ao passar o mouse */
+    color: #45a049; /* Cor do texto do link ao passar o mouse */
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: none; /* Remove a sublinhado do link */
+}
+
+/* Estilo para links específicos de excluir despesa */
+a[href*="excluirReceita.php"] {
+    color: darkred; /* Cor específica para links de excluir */
+    border: 1px solid darkred; /* Adiciona uma borda ao link */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 3px; /* Bordas arredondadas */
+    background-color: #fdd; /* Fundo levemente vermelho */
+}
+
+/* Estilo para links de excluir despesa ao passar o mouse */
+a[href*="excluirReceita.php"]:hover {
+    background-color: darkred; /* Fundo vermelho escuro ao passar o mouse */
+    color: white; /* Texto branco ao passar o mouse */
 }
 
 /* Estilo para links específicos de excluir despesa */

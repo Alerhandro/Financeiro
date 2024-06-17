@@ -11,6 +11,7 @@ include("conexao.php");
     <title>Receita</title>
     <link rel="stylesheet" href="teste.css">
     <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="cor.css">
 </head>
 
 <body>

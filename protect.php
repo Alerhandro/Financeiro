@@ -6,3 +6,5 @@ if (!isset($_SESSION)) {
 if (!isset($_SESSION["id"])) {
     die("<center> Você não está logado. Para acessar esta pagina acesse o seu login. <p><a href = \"login.html\">Entrar</a></p> </center>");
 }
+
+//protege de hackers

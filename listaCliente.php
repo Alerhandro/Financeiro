@@ -55,3 +55,5 @@ require("conexao.php");
 </body>
 
 </html>
+
+<!-- feito para eu ver os clientes cadastrados sem entrar no banco -->

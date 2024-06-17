@@ -37,7 +37,6 @@ include("conexao.php")
             <table>
                 <thead>
                     <tr>
-                        <!--   <th>ID</th> -->
                         <th>DESCRIÇÃO</th>
                         <th>FORMA DE PAGAMENTO</th>
                         <th>DATA DA COMPRA </th>
@@ -76,7 +75,6 @@ include("conexao.php")
             <table>
                 <thead>
                     <tr>
-                        <!--  <th>ID</th> -->
                         <th>DESCRIÇÃO</th>
                         <th>FORMA DE PAGAMENTO</th>
                         <th>DATA DA COMPRA </th>

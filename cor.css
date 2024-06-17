@@ -1,13 +1,16 @@
 .despesas {
     color: rgb(250, 0, 0);
+    font-weight: bold;
 }
 
 .receita {
-    color: rgb(19, 104, 11);
+    color: rgb(11, 77, 5);
+    font-weight: bold;
 }
 
 .total {
     color: rgb(11, 11, 194);
+    font-weight: bold;
 }
 
 /* Estilo básico para todos os links */

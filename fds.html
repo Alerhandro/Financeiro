@@ -1,3 +1,23 @@
-<h1> <Center>QUE PENA AMIGAO</Center></h1>
-
-<link rel="stylesheet" href="teste.css">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a Senha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forgot-password-form">
+            <h2>Esqueceu a Senha</h2>
+            <p>Insira seu e-mail para recuperar sua senha.</p>
+            <form action="login.php" method="POST">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <a href="login.html" class="back-to-login">Voltar para Login</a>
+        </div>
+    </div>
+</body>
+</html>

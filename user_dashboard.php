@@ -16,3 +16,5 @@ include("protect.php")
 </body>
 
 </html>
+
+<!-- aqui era pra ser as telas onde cada usuario teria a sua, mas deu preguiça e falta de conhecimento antecipado -->

@@ -1,5 +1,8 @@
 <?php
 include('conexao.php');
+
+// DEIXEI ASSIM PQ VAI Q EU USO
+
 /*
 if (isset($_POST['email']) && isset($_POST['senha'])) {
 

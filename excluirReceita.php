@@ -15,3 +15,4 @@ if ($execultaExclusao) {
     header("Location: Sobre.php"); 
     exit(0); 
 }
+//excluir 

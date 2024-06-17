@@ -17,3 +17,5 @@ if (mysqli_affected_rows($conexao) != 0) {
     echo " O valor não foi cadastrado com Sucesso!";
     header("Location: fds.html");
 }
+
+//feito para inserir as receitas

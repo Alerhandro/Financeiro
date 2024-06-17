@@ -15,3 +15,4 @@ if ($role == 'admin') {
 } else {
     echo "Role desconhecida!";
 }
+//serve pra conecar com admin ou user

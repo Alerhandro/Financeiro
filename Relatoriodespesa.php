@@ -22,6 +22,7 @@ if ($conexao->connect_error) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatório</title>
     <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="cor.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 

@@ -1,5 +1,4 @@
 <?php
-// Conexão com o banco de dados (exemplo utilizando MySQLi)
 $hostname = "localhost";
 $username = "root";
 $password = "";

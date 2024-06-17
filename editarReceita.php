@@ -21,3 +21,4 @@ if ($execultaAlteracao) {
     header("Location: sobre.php");
     exit(0);
 }
+//iria mexer mas resolvi deixar quieto

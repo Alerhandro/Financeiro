@@ -10,6 +10,7 @@ include("protect.php")
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
     <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="cor.css">
 </head>
 
 <body>

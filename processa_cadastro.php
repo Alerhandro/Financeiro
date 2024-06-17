@@ -19,3 +19,5 @@ if ($conexao->query($sql_code) === TRUE) {
 }
 
 $conexao->close();
+
+//nao lembro pra que era

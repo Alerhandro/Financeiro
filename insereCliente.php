@@ -14,3 +14,5 @@ if (mysqli_affected_rows($conexao) != 0) {
     echo " O Cliente não foi cadastrado com Sucesso!";
     header("Location: login.html");
 }
+
+//feito para inserir os clientes

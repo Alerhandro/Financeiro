@@ -29,3 +29,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $conn->close();
+
+/* ele valida os usuarios admin/user, mas nao usa mais */

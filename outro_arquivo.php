@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Teste para verificar se a sessão está funcionando
+
 $_SESSION['teste'] = "Sessão está funcionando corretamente";
 
 if (!isset($_SESSION['teste'])) {
@@ -9,3 +9,5 @@ if (!isset($_SESSION['teste'])) {
 } else {
     echo "As sessões estão funcionando corretamente.<br>";
 }
+
+// Teste para verificar se a sessão está funcionando (ta sim)

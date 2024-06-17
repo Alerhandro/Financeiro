@@ -71,6 +71,7 @@ table {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
     border-radius: 5px; /* Bordas arredondadas */
     overflow: hidden; /* Para garantir que as bordas arredondadas funcionem */
+    font-weight: bold;
 }
 
 /* Estilo para cabeçalho e células */

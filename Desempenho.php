@@ -12,6 +12,7 @@ include("conexao.php")
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desempenho</title>
     <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="cor.css">
 </head>
 
 <body>
@@ -59,6 +60,9 @@ include("conexao.php")
                                 <td><?= $receita['data_receita']; ?></td>
                                 <td class="receita">R$ <?= $receita['valor_receita']; ?></td>
                                 <td><?= $receita['status_receita']; ?></td>
+                                <td>
+                                    <a href="excluirReceita.php?ID=<?= $receita['id_receita']; ?>">Excluir</a>
+                                </td>
                             </tr>
                     <?php
                         }
@@ -95,6 +99,9 @@ include("conexao.php")
                                 <td><?= $despesa['data_despesa']; ?></td>
                                 <td class="despesas">R$ <?= $despesa['valor_despesa']; ?></td>
                                 <td><?= $despesa['status_despesa']; ?></td>
+                                <td>
+                                    <a href="excluirDespesa.php?ID=<?= $despesa['id_despesa']; ?>">Excluir</a>
+                                </td>
                             </tr>
                     <?php
                         }
@@ -142,7 +149,7 @@ include("conexao.php")
                             <tr>
                                 <td class="receita">R$ <?= $totalReceitas; ?></td>
                                 <td class="despesas">R$ - <?= $totalDespesas; ?></td>
-                                <td class="total" >R$ <?= $resultado; ?></td>
+                                <td class="total">R$ <?= $resultado; ?></td>
                             </tr>
                         </tbody>
                     </table>
